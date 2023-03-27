@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
-    
-   
-<link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors Game</title>
 
 </head>
 
- <body>
-<!-- header with little image -->
+<body>
+    <!-- header with little image -->
     <h1>Rock Paper Scissors Game
         <img src="" alt="">
     </h1>
@@ -24,27 +24,31 @@
     <!-- How to Play Rock Paper Scissors -->
     <div>
         <h2>How to Play Rock Paper Scissors</h2>
-        <p>Rock, paper scissors is a game that has its origins in China. 
-            Later, this game was transformed into its modern version while being played in Japan. 
-            It uses the three symbols of rock, paper, and scissors and has three possible outcomes of win, loss, or tie. 
-            Rock beats scissors, as it blunts or breaks scissors, scissors beat paper, as it cuts paper, 
+        <p>Rock, paper scissors is a game that has its origins in China.
+            Later, this game was transformed into its modern version while being played in Japan.
+            It uses the three symbols of rock, paper, and scissors and has three possible outcomes of win, loss, or tie.
+            Rock beats scissors, as it blunts or breaks scissors, scissors beat paper, as it cuts paper,
             and paper beats rock, as it covers rock.
 
-            In our game against the Cunning Computer, the player must choose one of the buttons of rock, paper, or scissors 
-            and then the outcome will be decided. Upon the completion of each game, 
-            there is the option to tempt fate and play again. Good luck! 
-             </p>
+            In our game against the Cunning Computer, the player must choose one of the buttons of rock, paper, or
+            scissors
+            and then the outcome will be decided. Upon the completion of each game,
+            there is the option to tempt fate and play again. Good luck!
+        </p>
 
-       <!-- small images of R P S -->
-        <span >
-        <ol>
-            <li><img src="assets/images/images-start/rock-start.jpg" alt="cartoon rock with competitive expression"></li>
-            <li><img src="assets/images/images-start/paper-start.jpg" alt="cartoon piece of paper with competitive expression"></li>
-            <li><img src="assets/images/images-start/scissors-start.jpg" alt="cartoon scissors with competitive expression"></li>
-        </ol>
-        </span> 
+        <!-- small images of R P S -->
+        <span>
+            <ol>
+                <li><img class="small-image" src="assets/images/images-start/rock-start.jpg"
+                        alt="cartoon rock with competitive expression"></li>
+                <li><img class="small-image" src="assets/images/images-start/paper-start.jpg"
+                        alt="cartoon piece of paper with competitive expression"></li>
+                <li><img class="small-image" src="assets/images/images-start/scissors-start.jpg"
+                        alt="cartoon scissors with competitive expression"></li>
+            </ol>
+        </span>
     </div>
-    <!-- small form with name and (favorite color request buttons -if time)-->
+    <!--request for player name -->
     <div>
         <form>
             <label>First Name:</label>
@@ -52,29 +56,42 @@
         </form>
     </div>
 
-<!-- Gameboard -->
-    <div class="gameboard">
-        
+    <!-- Gameboard Area -->
+    <section class="gameboard">
+        <!-- Scoreboard Area -->
 
-        <ol>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        </ol>
-        
+        <div class="player">
+            <h3 class="score">Your Score: <span id="player-score">0</span> </h3>
+        </div>
+        <div class="computer">
+            <h3 class="score">Cunning Computer's Score: <span id="computer-score">0</span></h3>
+        </div>
 
+        <!--choice Area-->
 
-    </div>
+        <div class="gameboard">
 
-<!--winner/loser popup and new game buttons-->
+            <button class="choice" selection="0"><img src="assets/images/images-start/rock-start.jpg"
+                    alt="cartoon rock with competitive expression"></button>
+
+            <button class="choice" selection="1"><img src="assets/images/images-start/paper-start.jpg"
+                    alt="cartoon piece of paper with competitive expression"></button>
+
+            <button class="choice" selection="2"><img src="assets/images/images-start/scissors-start.jpg"
+                    alt="cartoon scissors with competitive expression"></button>
+
+        </div>
+    </section>
+    <!--winner/loser result and new game buttons-->
     <section>
         <div>
             <ol>
-                <li id="winner-image"><img src="" alt=""></li>
-                <li id="loser-image"><img src="" alt=""></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+
             </ol>
         </div>
         <div>
@@ -84,7 +101,7 @@
 
     </section>
 
-<!-- thanks for playing popup -->
+    <!-- thanks for playing popup -->
     <section>
 
     </section>
@@ -98,6 +115,6 @@
 
 
     <script src="assets/js/script.js"></script>
- </body>
- </html>
+</body>
 
+</html>
