@@ -1,15 +1,14 @@
- @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
-
-
+ 
 body {
     font family: 'East Sea Dokdo', sans-serif;
-    margin: 0;
+    text-align: center;
+    
 }
 
 
 
 /* small images sytle*/
-.small-image{
+.small-image {
     list-style: none;
     display: flex;
     flex-direction: row;
