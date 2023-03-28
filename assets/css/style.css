@@ -41,23 +41,23 @@ body {
 
 /* style gameboard */
 .gameboard {
+   
 
+    
 }
 
 
 /* style gameboard buttons */
 .choice {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-width: 30%;
-background-color: black;
-background-size: cover;
-background-repeat: no-repeat;
 
+background-color: black;
+width: 30%;
+margin-left: auto;
+margin-top: 2%;
 
 }
 
 /* style gameboard images */
-
+.startimage {
+    width: 40%;
+}
