@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
 body {
-    font family: 'East Sea Dokdo', sans-serif;
+    font-family: 'East Sea Dokdo', sans-serif;
     text-align: center;
 
 
@@ -10,19 +10,22 @@ body {
 
 /* sytle header & logo*/
 #heading {
-    text-align: center;
-    font-size: 3rem;
-    font family: 'East Sea Dokdo';
-    font-weight: bold;
+    font-size: 7rem;
+    
 }
 
 #logo {
 
 }
 
-/* How to paragraph sytle */
-.#info {
-    
+/* How to paragraph style */
+
+#heading2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.#playinfo {
+    font-size: 8rem;
 
 
 
@@ -44,6 +47,14 @@ body {
 
 /* style gameboard buttons */
 .choice {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 30%;
+background-color: black;
+background-size: cover;
+background-repeat: no-repeat;
 
 
 }
