@@ -43,7 +43,14 @@ body {
 
 /* style player name input */
 
-
+#playername {
+    font-size: 3em;
+    text-align: center;
+    margin-block-start: 3%;
+    margin-block-end: 3%;
+    max-width: 75%;
+    margin: auto;
+}
 
 
 
