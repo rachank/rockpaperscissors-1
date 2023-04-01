@@ -41,18 +41,39 @@ body {
 }
 
 
-/* style player name input */
+/* style player name input and submit button */
 
-#playername {
-    font-size: 3em;
+#playernameform {
+    display: block;
+    margin-inline-end: 5%;
+    margin-inline-start: 5%;
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#playernameid {
+    font-size: 2em;
     text-align: center;
     margin-block-start: 3%;
     margin-block-end: 3%;
     max-width: 75%;
     margin: auto;
+    font-family: 'East Sea Dokdo', sans-serif;
 }
 
+#playernamelabel {
+    font-size: 3em;
 
+
+}
+
+#playernamesubmit {
+    font-size: 2em;
+    font-family: 'East Sea Dokdo', sans-serif;
+    background-color: #1b9ae3;
+    font-weight: bold;
+}
 
 
 /* style gameboard */
