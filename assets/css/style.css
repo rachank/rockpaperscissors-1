@@ -52,7 +52,7 @@ body {
     margin-bottom: 4%;
 }
 
-#playernameid {
+#playername {
     font-size: 2em;
     text-align: center;
     margin-block-start: 3%;
@@ -64,8 +64,6 @@ body {
 
 #playernamelabel {
     font-size: 3em;
-
-
 }
 
 #playernamesubmit {
@@ -75,13 +73,15 @@ body {
     font-weight: bold;
 }
 
+/* style score board area */
+
 
 /* style gameboard */
 .gameboard {
-   
-
     
 }
+
+
 
 
 /* style gameboard buttons */
