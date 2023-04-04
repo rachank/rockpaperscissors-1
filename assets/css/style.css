@@ -100,26 +100,26 @@ body {
 
 .gameboard {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     border: none;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  
     
 }
-    
-.gameboard-detail {
+ 
+/*.gameboard-detail 
 
   /*  flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
+*/
     
 
 /* style gameboard */
@@ -153,16 +153,28 @@ body {
 }*/
 .startimage {
  
-        object-fit: cover;
+ padding: 1.5em;
+ width: 100%
+ height: auto;
+ align-content: center;
+ overflow: hidden;
+ object-fit: cover;
+
+
        
-        
-        padding: 1emx;
+}
+
+/*removed from .startimage - try again
+        object-fit: cover;
+        padding: 1em;
         margin: 0;
         padding: 0;
         border: none;
         box-sizing: border-box;
-        overflow-x: hidden;
-}
+        overflow: hidden;
+
+
+
 /* width: 30%;
 height: 30%;
 vertical-align: middle;
