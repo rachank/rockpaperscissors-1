@@ -3,6 +3,8 @@
 body {
     font-family: 'East Sea Dokdo', sans-serif;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0;
 
 
 
@@ -96,26 +98,28 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
+    padding: 0, 1.5em;
     border: none;
-    overflow-y: hidden;
-  
-    
+    overflow-x: hidden;  
+}
+
+.gameboardimage .startimage {
+    display: block;
+    padding: 1.5em;
 }
 
 .startimage {
-    
+    max-width: 100%;
     padding: 1.5em;
-    width: 25%
     align-content: center;
     overflow: hidden;
     object-fit: cover;
+    
      
 }
 
