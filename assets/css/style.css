@@ -97,7 +97,6 @@ body {
 
 
 
-
 .gameboard {
     display: flex;
     flex-wrap: wrap;
@@ -151,6 +150,7 @@ body {
 
     
 }*/
+
 .startimage {
  
  padding: 1.5em;
