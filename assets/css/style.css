@@ -100,21 +100,26 @@ body {
 
 .gameboard {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    width: 100%;
     background-color: black;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
     overflow-x: hidden;
+    
 }
     
+.gameboard-detail {
 
+  /*  flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
     
 
 /* style gameboard */
@@ -149,13 +154,15 @@ body {
 .startimage {
  
         object-fit: cover;
-        width: 30%;
-        height: 30%;
-        vertical-align: middle;
-        padding: 20px;
+       
+        
+        padding: 1emx;
         margin: 0;
         padding: 0;
         border: none;
         box-sizing: border-box;
         overflow-x: hidden;
 }
+/* width: 30%;
+height: 30%;
+vertical-align: middle;

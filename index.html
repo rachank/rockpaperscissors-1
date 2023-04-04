@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="rock paper scissors game">
-    <meta name="keywords" content="game, rock, paper, scissors, fun, cartoons, free"
-    <!-- Google Fonts -->
+    <meta name="keywords" content="game, rock, paper, scissors, fun, cartoons, free" <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
 
 
@@ -18,8 +17,9 @@
 <body>
     <!-- header with little image -->
     <h1 id="heading">Rock Paper Scissors Game</h1>
-    <div><img id="logo" src="assets/images/images.logo/rock-paper-scissors-logo-small.jpg" alt="logo of rock paper and scissors"></div>
-   
+    <div><img id="logo" src="assets/images/images.logo/rock-paper-scissors-logo-small.jpg"
+            alt="logo of rock paper and scissors"></div>
+
     <!-- How to Play Rock Paper Scissors -->
     <div>
         <h2 id="heading2">How to Play<br>Rock Paper Scissors</h2>
@@ -29,49 +29,49 @@
             Rock beats scissors, as it blunts or breaks scissors, scissors beat paper, as it cuts paper,
             and paper beats rock, as it covers rock.
             <br>In our game against the Cunning Computer, the player must choose one of the buttons of rock, paper, or
-                scissors
-                and then the outcome will be decided.<br>Good Luck!!
+            scissors
+            and then the outcome will be decided.<br>Good Luck!!
         </p>
     </div>
     <!--request for player name -->
     <div id="playernameform">
         <form id="sectionplayername">
             <label id="playernamelabel" for="playernameid">Player Name:</label>
-            <input type="text" id="playername" name="playername" placeholder = "Please enter your name.">
+            <input type="text" id="playername" name="playername" placeholder="Please enter your name.">
             <input type="submit" id="playernamesubmit">
         </form>
     </div>
 
-       <!-- Scoreboard Area -->
-    
-        <div id="scoreboard-area">
-            <h3 class="scoreheading">Score</h3>
-            <h3 class="score">"player-name": <span id="player-score">0</span> </h3>
-        
-            <h3 class="score">Cunning Computer: <span id="computer-score">0</span></h3>
-        </div>
-    
+    <!-- Scoreboard Area -->
+
+    <div id="scoreboard-area">
+        <h3 class="scoreheading">Score</h3>
+        <h3 class="score">"player-name": <span id="player-score">0</span> </h3>
+
+        <h3 class="score">Cunning Computer: <span id="computer-score">0</span></h3>
+    </div>
+
     <!-- Gameboard Area -->
     <section class="gameboard">
         <!--choice Area-->
 
         <div class="gameboard">
+            class="gameboard-detail">
+            <img selection="0" class="startimage" src="assets/images/images-start/rock-start.jpg"
+                alt="cartoon rock with competitive expression">
 
-            <button class="choice" selection="0"><img class="startimage" src="assets/images/images-start/rock-start.jpg"
-                    alt="cartoon rock with competitive expression"></button>
+            <img selection="1" class="startimage" src="assets/images/images-start/paper-start.jpg"
+                alt="cartoon piece of paper with competitive expression">
 
-            <button class="choice" selection="1"><img class="startimage" src="assets/images/images-start/paper-start.jpg"
-                    alt="cartoon piece of paper with competitive expression"></button>
-
-            <button class="choice" selection="2"><img class="startimage" src="assets/images/images-start/scissors-start.jpg"
-                    alt="cartoon scissors with competitive expression"></button>
+            <img selection="2" class="startimage" src="assets/images/images-start/scissors-start.jpg"
+                alt="cartoon scissors with competitive expression">
 
         </div>
     </section>
-    <!--winner/loser result --> 
+    <!--winner/loser result -->
     <section>
         <div>
-            
+
         </div>
         <div>
             <h3 id="title-playagain">Wanna Play Again?</h3>
