@@ -78,7 +78,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.4em
+    gap: 0.3em
 
 }
 
@@ -96,31 +96,66 @@ body {
 }
 
 
-  /*  display: inline-block;
-    
-    margin-block-start: 3%;
-    margin-block-end: 3%;
-    margin: auto;
+
+
+.gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
+    
+
+    
 
 /* style gameboard */
-.gameboard {
+/*.gameboard {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3em
 
-    width: 75%;
+
+  
 
 }
 
-/* style gameboard buttons */
+/* style gameboard buttons 
 .choice {
 
     background-color: black;
-    width: 30%;
-    margin-left: auto;
+    width: 25%;
+    margin: center;
     margin-top: 2%;
 
 }
 
 /* style gameboard images */
+/*.startimage {
+    width: 20%;
+
+    
+}*/
 .startimage {
-    width: 40%;
+ 
+        object-fit: cover;
+        width: 30%;
+        height: 30%;
+        vertical-align: middle;
+        padding: 20px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+        overflow-x: hidden;
 }
