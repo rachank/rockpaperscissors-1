@@ -119,10 +119,28 @@ body {
     padding: 1.5em;
     align-content: center;
     overflow: hidden;
-    object-fit: cover;
-    
-     
+    object-fit: cover;   
 }
+
+/* style play again buttons and image */
+
+#title-playagain {
+    font-size: 3em;
+    text-align: center;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.1em;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+
 
 @media screen and (max-width: 320px) {
 .gameboardimage .startimage {
@@ -130,22 +148,3 @@ body {
     }
 }
 
-
-
-  
-
-
-/*removed from .startimage - try again
-        object-fit: cover;
-        padding: 1em;
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box;
-        overflow: hidden;
-
-
-
-/* width: 30%;
-height: 30%;
-vertical-align: middle;
