@@ -3,7 +3,7 @@
 
 
 /* 
-1. user comes to page and enters player name
+
 1a. player name is placed into score board
 1b. player name is also entered into winner/loser annoucement
 
@@ -27,10 +27,26 @@ random image choice in background
 
 7. Add counter of number of games to 10
 
-8. once 10 games is played, 
+8. once 10 games are played, 
     -add play again button, or 
     - No play again button and thankyou popup.
 */
+
+
+
+/* List all constants for DOM elements and choices for game*/
+
+var playerName = document.getElementById("playername");
+
+function showPlayerName(){
+document.getElementById(displayplayername).innerHTML = document.getElementById("playername").ariaValueMax;
+}
+
+
+/*1. user comes to page and enters player name - 
+this name is then placed into the score board*/
+
+
 
 
 
