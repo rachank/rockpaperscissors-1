@@ -128,10 +128,30 @@ body {
 .startimage:hover {
     transform: scale(0.9);
 }
-    /*
-    
-     
-}*/
+ 
+/*style winner-loser image results and headers*/
+
+.winloseimages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0, 1.5em;
+    border-color: black;
+    border: 1em;
+    overflow-x: hidden; 
+}
+
+.winloseheader {
+    font-size: 4em;
+    text-align: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.3em;
+}
+
 
 /* style play again buttons and image */
 
