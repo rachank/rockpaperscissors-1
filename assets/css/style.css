@@ -88,7 +88,6 @@ body {
 }
 .score {
     font-size: 3em;
-    
     text-align: center;
     margin-block-start: 0.3em;
     margin-block-end: 0.3em;
@@ -123,6 +122,11 @@ body {
     align-content: center;
     overflow: hidden;
     object-fit: cover;
+    transition: 120ms;
+}
+
+.startimage:hover {
+    transform: scale(0.9);
 }
     /*
     
