@@ -22,8 +22,8 @@ body {
 #heading2 {
     font-size: 4em;
     font-weight: bold;
-    margin-block-start: 2%;
-    margin-block-end: 2%;
+    margin-block-start: 0.2%;
+    margin-block-end: 1%;
 }
 
 #playinfo {
@@ -122,8 +122,12 @@ body {
     padding: 1.5em;
     align-content: center;
     overflow: hidden;
-    object-fit: cover;   
+    object-fit: cover;
 }
+    /*
+    
+     
+}*/
 
 /* style play again buttons and image */
 
