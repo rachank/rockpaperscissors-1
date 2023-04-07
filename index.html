@@ -33,20 +33,28 @@
             and then the outcome will be decided.<br>Good Luck!!
         </p>
     </div>
-    <!--request for player name -->
+    <!--NO request for player name
     <div id="playernameform">
         <form id="sectionplayername">
             <label id="playernamelabel" for="playernameid">Player Name:</label>
-            <input type="text" id="playername" name="name" size="30" maxlength="50" placeholder="Please enter your name.">
+            <input type="text" id="playername" name="name" size="30" maxlength="50" placeholder="Please enter your name." required>
             <input type="submit" onclick="showPlayerName()" id="playernamesubmit">
         </form>
-    </div>
-    <!-- Scoreboard Area - displays the name of player entered-->
+    </div> -->
+    
+    <!-- Scoreboard Area - displays the name of player entered
     <div id="scoreboard-area">
         <h3 class="scoreheading">Score</h3>
-        <h3 class="score" id="displayplayername"> <span  id="player-score">0</span> </h3>
+        <h3 class="score" id="displayplayername"> <span   id="player-score">0</span> </h3>
         <h3 class="score">Cunning Computer: <span id="computer-score">0</span></h3>
-    </div>
+    </div> -->
+
+    <!-- Scoreboard Area -->
+    <div id="scoreboard-area">
+        <h3 class="scoreheading">Score</h3>
+        <h3 class="score">Your Score: <span   id="player-score">0</span> </h3>
+        <h3 class="score">Cunning Computer: <span id="computer-score">0</span></h3>
+    </div> 
 
     <!-- Gameboard Area -->
     <section class="gameboard">

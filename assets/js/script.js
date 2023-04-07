@@ -36,10 +36,10 @@ random image choice in background
 
 /* List all constants for DOM elements and choices for game*/
 
-var playerName = document.getElementById("playername");
+/*var playerName = document.getElementById("playername");*/
 
 function showPlayerName(){
-document.getElementById(displayplayername).innerHTML = document.getElementById("playername").ariaValueMax;
+document.getElementById(displayplayername).innerHTML = document.getElementById("playername").value;
 }
 
 
