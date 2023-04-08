@@ -176,8 +176,12 @@ body {
     border: 0.2%;
     border-color: black;
     margin: 1%;
+    transition: 120ms;
 }
 
+.playagain:hover {
+    transform: scale(1.1);
+}
 
 /*position: absolute;
     display: block;
