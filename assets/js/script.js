@@ -1,4 +1,3 @@
-
 /**List all constants for DOM elements and game options */
 
 let startImages = document.querySelectorAll(".startimage");
@@ -8,41 +7,29 @@ let computer;
 /* GameBoard area - play game*/
 
 function playGame(e) {
-  const pPick = e.target.id;
- 
-  const compPick = getCompPick();
+    const pPick = e.target.id;
+    getCompPick();
+
+    console.log(pPick, compPick);
 }
-console.log(pPick);
 
 // Event Listener for each initial click on start images to play game
-startImage.forEach(startimage => startimage.addEventListener('click', playGame));
+startImages.forEach(startimage => startimage.addEventListener('click', playGame));
 
-//Computer random choice of images game function
-  function getCompPick() {
+//Get computer random choice of image game function
+function getCompPick() {
     const randPick = Math.floor(Math.random() * 3) + 1;
-    switch(randPick){
+    switch (randPick) {
         case 1:
-            computer = "rock"
+            compPick = "rock";
             break;
         case 2:
-            computer = "paper"
+            compPick = "paper";
             break;
         case 3:
-            computer = "scissors"
+            compPick = "scissors";
             break;
     }
-  }
-  console.log(compPick);
-  
-  
-
-
-
-
-
-
-
-
-
+}
 
 
