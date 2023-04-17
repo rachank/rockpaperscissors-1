@@ -1,8 +1,16 @@
 /**List all constants for DOM elements and game options */
 
 let startImages = document.querySelectorAll(".startimage");
-
 let compPick;
+
+
+const winnerLoserImages = [
+    "rock": {
+        "happyRock": [
+           "/workspace/rockpaperscissors-1/assets/images/images-win/rock-win-laugh.jpg"
+        ]
+    }
+]
 
 /* GameBoard area - play game*/
 
@@ -55,4 +63,4 @@ function findWinner(pPick, compPick) {
         }
     }
 }
-// Show Winner of game, Player choice and  
+// Show Winner of game, Player choice and Computer choice
