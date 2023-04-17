@@ -2,9 +2,11 @@
 
 let startImages = document.querySelectorAll(".startimage");
 let compPick;
-const winnerResult = document.getElementById("winnerResult");
-let winImages = document.getElementsByClassName("winimages");
-let loseImages = document.getElementsByClassName("loseImages");
+//const winnerResult = document.getElementById("winnerResult"); 
+//add above to HTML Modal div
+const modal = document.getElementsByClassName(".modal")
+let winImages = document.getElementsByClassName(".winimages");
+let loseImages = document.getElementsByClassName(".loseimages");
 
 /* GameBoard area - play game*/
 
@@ -58,14 +60,26 @@ function findWinner(pPick, compPick) {
     }
 }
 
-// Determine winner loser images to display
+// Determine winner image to display
+function findWinnerImage(pPick, compPick) {
 
+}
 
+// Determine loser image to display
+function findWinnerImage(pPick, compPick) {
+
+}
 
 // Display Winner of game, Player choice and Computer choice
 function displayWinner(checkWinner, pPick, compPick) {
-    if(checkWinner === "player") {
-    //Display winner result
-    
+    if(checkWinner === "player" && pPick === "rock") {
+
+
+
+
+    //Increment player score
+
+    //Show modal result
+    winnerResult.innerHTML = ``;
     }
 }

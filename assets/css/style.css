@@ -138,6 +138,12 @@ body {
     display: none;
 } 
 
+.winloseimagescontainer {
+    display: none;
+}
+.winimagesdiv {
+    display: none;
+}
 
 /*style winner-loser image results and headers*/
 
