@@ -2,22 +2,22 @@
 
 let startImages = document.querySelectorAll(".startimage");
 
-let computer;
+let compPick;
 
 /* GameBoard area - play game*/
 
 function playGame(e) {
     const pPick = e.target.id;
-    getCompPick();
-
-    console.log(pPick, compPick);
+    findCompPick();
+    const checkWinner = findWinner(pPick, compPick)
+    console.log(pPick, compPick, checkWinner);
 }
 
 // Event Listener for each initial click on start images to play game
 startImages.forEach(startimage => startimage.addEventListener('click', playGame));
 
 //Get computer random choice of image game function
-function getCompPick() {
+function findCompPick() {
     const randPick = Math.floor(Math.random() * 3) + 1;
     switch (randPick) {
         case 1:
@@ -31,5 +31,28 @@ function getCompPick() {
             break;
     }
 }
-
-
+//Get the Winner of the game
+function findWinner(pPick, compPick) {
+    if (pPick === compPick) {
+        return "tie";
+    } else if (pPick === "rock") {
+        if (compPick === "paper") {
+            return "computer";
+     } else {
+        return "player";
+     }     
+    } else if (pPick === "paper") {
+        if (compPick === "scissors") {
+            return "computer";
+        } else {
+            return "player";
+        }
+    } else if (pPick === "scissors") {
+        if (compPick === "rock") {
+            return "computer";
+        } else {
+            return "player";
+        }
+    }
+}
+// Show Winner of game, Player choice and  
