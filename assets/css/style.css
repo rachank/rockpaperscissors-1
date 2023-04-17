@@ -129,7 +129,10 @@ body {
     transform: scale(0.9);
 }
  
-/*Winner and Loser container
+/*Winner and Loser result container*/
+
+.winloseresultcontainer {
+    display: none;
 
 .winlosecontainer {
     display: none;
@@ -210,6 +213,7 @@ body {
 @media screen and (max-width: 320px) {
 .gameboardimage .startimage {
         padding: 0;
+        background-color: none;
     }
 }
 

@@ -25,7 +25,8 @@
         <h2 id="heading2">How to Play<br>Rock Paper Scissors</h2>
         <p id="playinfo">Rock, paper scissors is a game that has its origins in China.
             Later, this game was transformed into its modern version while being played in Japan.
-            <br>It uses the three symbols of rock, paper, and scissors and has three possible outcomes of win, loss, or tie.
+            <br>It uses the three symbols of rock, paper, and scissors and has three possible outcomes of win, loss, or
+            tie.
             Rock beats scissors, as it blunts or breaks scissors, scissors beat paper, as it cuts paper,
             and paper beats rock, as it covers rock.
             <br>In our game against the Cunning Computer, you must click on one of the images of rock, paper, or
@@ -41,7 +42,7 @@
             <input type="submit" onclick="showPlayerName()" id="playernamesubmit">
         </form>
     </div> -->
-    
+
     <!-- Scoreboard Area - displays the name of player entered
     <div id="scoreboard-area">
         <h3 class="scoreheading">Score</h3>
@@ -52,9 +53,9 @@
     <!-- Scoreboard Area -->
     <div id="scoreboard-area">
         <h3 class="scoreheading">Score</h3>
-        <h3 class="score">Your Score: <span   id="player-score">0</span> </h3>
+        <h3 class="score">Your Score: <span id="player-score">0</span> </h3>
         <h3 class="score">Cunning Computer: <span id="computer-score">0</span></h3>
-    </div> 
+    </div>
 
     <!-- Gameboard Area -->
     <section class="gameboard">
@@ -76,91 +77,104 @@
         </div>
     </section>
     <!--winner/loser result and play again buttons -->
-    <section>
+    <section class="winloseresultcontainer">
         <div class="winlosecontainer">
             <div class="winloseimages">
                 <h4 class="winloseheader" id="playerwinloseheader">You </h4>
-                <h4 id="computerwinloseheader">Cunning Computer </h4>     
-            </div>
-        </div> 
-      <!-- TO FIX LATER WITH MODAL-->     
-        <div class="winloseimageplayer" id="winlose-playerimage"> 
-
-    <!-- List of Winner and Loser images-->
-        <div class="winloseimagescontainer">
-
-    <!--list of rock winner and loser images-->
-            <div class="allwinloseimages">    
-                <ol class="happyrockimages">
-                    <li><img class="happyrock"  src="assets/images/images-win/rock-win-laugh.jpg" alt="laughing rock"> 
-                        </li>
-                    <li><img class="happyrock"  src="assets/images/images-win/rock-win-smile.jpg" alt="smiling rock"> 
-                        </li>
-                    <li><img class="happyrock"  src="assets/images/images-win/rock-win-tease.jpg" alt="teasing tongue sticking out rock"> 
-                        </li>
-                    <li><img class="happyrock"  src="assets/images/images-win/rock-win-wink.jpg" alt="winking rock"> 
-                        </li>
-                </ol>
-                <ol class="sadrockimages">
-                    <li><img class="sadrock"  src="assets/images/images-lose/rock-lose-dazed.jpg" alt="dazed rock"> 
-                        </li>
-                    <li><img class="sadrock"  src="assets/images/images-lose/rock-lose-grumpy.jpg" alt="grumpy rock"> 
-                        </li>
-                    <li><img class="sadrock"  src="assets/images/images-lose/rock-lose-sad.jpg" alt="sad rock"> 
-                        </li>
-                    <li><img class="sadrock"  src="assets/images/images-lose/rock-lose-surprise.jpg" alt="surprised rock"> 
-                        </li>
-                </ol>
-<!--list of paper winner and loser images-->
-                <ol class="happypaperimages">
-                    <li><img class="happypaper"  src="assets/images/images-win/paper-win-laugh.jpg" alt="laughing paper"> 
-                        </li>
-                    <li><img class="happypaper"  src="assets/images/images-win/paper-win-smile.jpg" alt="smiling paper"> 
-                        </li>
-                    <li><img class="happypaper"  src="assets/images/images-win/paper-win-tease.jpg" alt="teasing tongue sticking out paper"> 
-                        </li>
-                    <li><img class="happypaper"  src="assets/images/images-win/paper-win-wink.jpg" alt="winking paper"> 
-                        </li>
-                </ol>
-                <ol class="sadpaperimages">
-                    <li><img class="sadpaper"  src="assets/images/images-lose/paper-lose-dazed.jpg" alt="dazed paper"> 
-                        </li>
-                    <li><img class="sadpaper"  src="assets/images/images-lose/paper-lose-grumpy.jpg" alt="grumpy paper"> 
-                        </li>
-                    <li><img class="sadpaper"  src="assets/images/images-lose/paper-lose-sad.jpg" alt="sad paper"> 
-                        </li>
-                    <li><img class="sadpaper"  src="assets/images/images-lose/paper-lose-surprise.jpg" alt="surprised paper"> 
-                        </li>
-                </ol>
-<!--list of scissors winner and loser images-->
-<ol class="happyscissorsimages">
-    <li><img class="happyscissors"  src="assets/images/images-win/scissors-win-laugh.jpg" alt="laughing scissors"> 
-        </li>
-    <li><img class="happyscissors"  src="assets/images/images-win/scissors-win-smile.jpg" alt="smiling scissors"> 
-        </li>
-    <li><img class="happyscissors"  src="assets/images/images-win/scissors-win-tease.jpg" alt="teasing tongue sticking out scissors"> 
-        </li>
-    <li><img class="happyscissors"  src="assets/images/images-win/scissors-win-wink.jpg" alt="winking scissors"> 
-        </li>
-</ol>
-<ol class="sadscissorsimages">
-    <li><img class="sadscissors"  src="assets/images/images-lose/scissors-lose-dazed.jpg" alt="dazed scissors"> 
-        </li>
-    <li><img class="sadscissors"  src="assets/images/images-lose/scissors-lose-grumpy.jpg" alt="grumpy scissors"> 
-        </li>
-    <li><img class="sadscissors"  src="assets/images/images-lose/scissors-lose-sad.jpg" alt="sad scissors"> 
-        </li>
-    <li><img class="sadscissors"  src="assets/images/images-lose/Scissors-lose-surprise.jpg" alt="surprised scissors"> 
-        </li>
-</ol>
-
-
+                <h4 id="computerwinloseheader" id="playerwinloseheader">Cunning Computer </h4>
             </div>
         </div>
+        <!-- TO FIX LATER WITH MODAL-->
+        <div class="winloseimageplayer" id="winlose-playerimage">
 
-        </section>
-       
-       
+            <!-- List of Winner and Loser images-->
+            <div class="winloseimagescontainer">
+
+                <!--list of rock winner and loser images-->
+                <div class="winimagesdiv">
+                    <ol class="winimages">
+                        <li><img class="happyrock" src="assets/images/images-win/rock-win-laugh.jpg"
+                                alt="laughing rock">
+                        </li>
+                        <li><img class="happyrock" src="assets/images/images-win/rock-win-smile.jpg" 
+                            alt="smiling rock">
+                        </li>
+                        <li><img class="happyrock" src="assets/images/images-win/rock-win-tease.jpg"
+                                alt="teasing tongue sticking out rock">
+                        </li>
+                        <li><img class="happyrock" src="assets/images/images-win/rock-win-wink.jpg" 
+                            alt="winking rock">
+                        </li>
+                        <li><img class="happypaper" src="assets/images/images-win/paper-win-laugh.jpg"
+                                alt="laughing paper">
+                        </li>
+                        <li><img class="happypaper" src="assets/images/images-win/paper-win-smile.jpg"
+                                alt="smiling paper">
+                        </li>
+                        <li><img class="happypaper" src="assets/images/images-win/paper-win-tease.jpg"
+                                alt="teasing tongue sticking out paper">
+                        </li>
+                        <li><img class="happypaper" src="assets/images/images-win/paper-win-wink.jpg"
+                                alt="winking paper">
+                        </li>
+                        <li><img class="happyscissors" src="assets/images/images-win/scissors-win-laugh.jpg"
+                                alt="laughing scissors">
+                        </li>
+                        <li><img class="happyscissors" src="assets/images/images-win/scissors-win-smile.jpg"
+                                alt="smiling scissors">
+                        </li>
+                        <li><img class="happyscissors" src="assets/images/images-win/scissors-win-tease.jpg"
+                                alt="teasing tongue sticking out scissors">
+                        </li>
+                        <li><img class="happyscissors" src="assets/images/images-win/scissors-win-wink.jpg"
+                                alt="winking scissors">
+                        </li>
+                    </ol>
+                </div>
+                <div class="loseimagesdiv">
+                    <ol class="loseimages">
+                        <li><img class="sadrock" src="assets/images/images-lose/rock-lose-dazed.jpg" 
+                            alt="dazed rock">
+                        </li>
+                        <li><img class="sadrock" src="assets/images/images-lose/rock-lose-grumpy.jpg" 
+                            alt="grumpy rock">
+                        </li>
+                        <li><img class="sadrock" src="assets/images/images-lose/rock-lose-sad.jpg" 
+                            alt="sad rock">
+                        </li>
+                        <li><img class="sadrock" src="assets/images/images-lose/rock-lose-surprise.jpg"
+                                alt="surprised rock">
+                        </li>
+                        <li><img class="sadpaper" src="assets/images/images-lose/paper-lose-dazed.jpg"
+                                alt="dazed paper">
+                        </li>
+                        <li><img class="sadpaper" src="assets/images/images-lose/paper-lose-grumpy.jpg"
+                                alt="grumpy paper">
+                        </li>
+                        <li><img class="sadpaper" src="assets/images/images-lose/paper-lose-sad.jpg" alt="sad paper">
+                        </li>
+                        <li><img class="sadpaper" src="assets/images/images-lose/paper-lose-surprise.jpg"
+                                alt="surprised paper">
+                        </li>
+                        <li><img class="sadscissors" src="assets/images/images-lose/scissors-lose-dazed.jpg"
+                                alt="dazed scissors">
+                        </li>
+                        <li><img class="sadscissors" src="assets/images/images-lose/scissors-lose-grumpy.jpg"
+                                alt="grumpy scissors">
+                        </li>
+                        <li><img class="sadscissors" src="assets/images/images-lose/scissors-lose-sad.jpg"
+                                alt="sad scissors">
+                        </li>
+                        <li><img class="sadscissors" src="assets/images/images-lose/Scissors-lose-surprise.jpg"
+                                alt="surprised scissors">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+    </section>
+
+
     </section>
     <section>
         <!-- play again and thanks for playing popup once button to stop playing is pushed -->
@@ -174,11 +188,7 @@
 
     </section>
 
-    
-    <section>
 
-    </section>
-    
     <script src="assets/js/script.js"></script>
 </body>
 

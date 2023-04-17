@@ -2,14 +2,16 @@
 
 let startImages = document.querySelectorAll(".startimage");
 let compPick;
-
+const winnerResult = document.getElementById("winnerResult");
+let winImages = document.getElementsByClassName("winimages");
+let loseImages = document.getElementsByClassName("loseImages");
 
 /* GameBoard area - play game*/
 
 function playGame(e) {
     const pPick = e.target.id;
     findCompPick();
-    const checkWinner = findWinner(pPick, compPick)
+    const checkWinner = findWinner(pPick, compPick);
     console.log(pPick, compPick, checkWinner);
 }
 
@@ -55,4 +57,15 @@ function findWinner(pPick, compPick) {
         }
     }
 }
-// Show Winner of game, Player choice and Computer choice
+
+// Determine winner loser images to display
+
+
+
+// Display Winner of game, Player choice and Computer choice
+function displayWinner(checkWinner, pPick, compPick) {
+    if(checkWinner === "player") {
+    //Display winner result
+    
+    }
+}
