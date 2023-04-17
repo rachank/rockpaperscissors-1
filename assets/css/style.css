@@ -129,6 +129,13 @@ body {
     transform: scale(0.9);
 }
  
+/*Winner and Loser container
+
+.winlosecontainer {
+    display: none;
+} 
+
+
 /*style winner-loser image results and headers*/
 
 .winloseimages {

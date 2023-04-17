@@ -4,14 +4,6 @@ let startImages = document.querySelectorAll(".startimage");
 let compPick;
 
 
-const winnerLoserImages = [
-    "rock": {
-        "happyRock": [
-           "/workspace/rockpaperscissors-1/assets/images/images-win/rock-win-laugh.jpg"
-        ]
-    }
-]
-
 /* GameBoard area - play game*/
 
 function playGame(e) {
@@ -24,7 +16,7 @@ function playGame(e) {
 // Event Listener for each initial click on start images to play game
 startImages.forEach(startimage => startimage.addEventListener('click', playGame));
 
-//Get computer random choice of image game function
+//Get computer random choice of image for game function
 function findCompPick() {
     const randPick = Math.floor(Math.random() * 3) + 1;
     switch (randPick) {
