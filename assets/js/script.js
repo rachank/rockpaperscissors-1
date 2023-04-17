@@ -1,19 +1,29 @@
 
 /**List all constants for DOM elements and game options */
 
-const startImage = document.querySelectorAll(".startimage");
+let startImages = document.querySelectorAll(".startimage");
 
 
 /* GameBoard area - play game*/
 
 function playGame(e) {
-  console.log(e.target.id);
+  const pPick = e.target.id;
+ 
+  const compPick = getCompPick();
 }
+console.log(pPick);
 
-// Event Listener for initial click to play game
+// Event Listener for each initial click on start images to play game
 startImage.forEach(startimage => startimage.addEventListener('click', playGame));
 
+//Computer random choice of images game function
+  function getCompPick() {
 
+
+  }
+  
+  
+  Math.floor(Math.random() * 3);
 
 
 
