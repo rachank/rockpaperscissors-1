@@ -1,5 +1,5 @@
 /*List all constants for DOM elements and game options */
-/*
+
 let startImages = document.querySelectorAll(".startimage");
 let compPick;
 //const winnerResult = document.getElementById("winnerResult"); 
@@ -8,7 +8,7 @@ const modal = document.getElementsByClassName(".modal")
 let winImages = document.getElementsByClassName(".winimages");
 let loseImages = document.getElementsByClassName(".loseimages");
 
-/* GameBoard area - play game
+// GameBoard area - play game
 
 function playGame(e) {
     const pPick = e.target.id;
@@ -16,11 +16,11 @@ function playGame(e) {
     const checkWinner = findWinner(pPick, compPick);
     console.log(pPick, compPick, checkWinner);
 }
-*/
-/* Event Listener for each initial click on start images to play game
+
+// Event Listener for each initial click on start images to play game
 startImages.forEach(startimage => startimage.addEventListener('click', playGame));
-*/
-/*Get computer random choice of image for game function
+
+//Get computer random choice of image for game function
 function findCompPick() {
     const randPick = Math.floor(Math.random() * 3) + 1;
     switch (randPick) {
@@ -59,7 +59,7 @@ function findWinner(pPick, compPick) {
         }
     }
 }
-*/
+
 /* Determine winner image to display
 function findWinnerImage(pPick, compPick) {
 
@@ -86,7 +86,7 @@ function displayWinner(checkWinner, pPick, compPick) {
 */
 //new code to add
 
-const CHARACTERS = [
+/*const CHARACTERS = [
     {
         'name': 'rock',
         'beats': 'scissors',
