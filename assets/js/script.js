@@ -142,7 +142,56 @@ function displayWinner(playerChoice, computerChoice) {
         playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win.jpg`
         // if you wanted to add the random happy expression:
         // e.g. assets/images/images-win/rock-win-laugh.jpg
-        // let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
-        // playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win-${happyExpression}.jpg`
+        
+        let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
+        playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win-${happyExpression}.jpg`
+        
         playerImage.alt = `picture of happy ${playerChoice.name}`
         playerImage.classList.add(`happy${playerChoice.name}`)
+
+             // e.g. assets/images/images-lose/scissors-lose.jpg
+             let sadExpression = getRandomItemInArray(SAD_EXPRESSIONS)
+             computerImage.src = `${SAD_IMAGES_DIR}${computerChoice.name}-win-${sadExpression}.jpg`
+
+             computerImage.src = `${SAD_IMAGES_DIR}${computerChoice.name}-lose.jpg`
+             computerImage.alt = `picture of sad ${computerChoice.name}`
+             computerImageclassList.add(`sad${computerChoice.name}`)
+         }
+         else if (computerChoice.beats === playerChoice.name) {
+             // computer beats player -- show sad player, happy computer
+     
+             // fill these in as above
+             let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
+             computerImage.src = `${HAPPY_IMAGES_DIR}${computerChoice.name}-win-${happyExpression}.jpg`
+             computerImage.src = '${HAPPY_IMAGES_DIR}${computerChoice.name}-win.jpg'
+             computerImage.alt = 'picture of happy ${computerChoice.name}'
+     
+             let sadExpression = getRandomItemInArray(SAD_EXPRESSIONS)
+             playerImage.src = `${SAD_IMAGES_DIR}${playerChoice.name}-win-${sadExpression}.jpg`
+             playerImage.src = '${SAD_IMAGES_DIR}${playerChoice.name}-lose.jpg'
+             playerImage.alt = 'picture of sad ${playerChoice.name}'
+         }
+         else {
+             // draw -- both happy
+             let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
+             computerImage.src = `${HAPPY_IMAGES_DIR}${computerChoice.name}-win-${happyExpression}.jpg`
+             computerImage.src = '${HAPPY_IMAGES_DIR}${computerChoice.name}-win.jpg'
+             computerImage.alt = 'picture of happy ${computerChoice.name}'
+     
+             let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
+             playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win-${happyExpression}.jpg`
+             playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win.jpg`
+             playerImage.alt = `picture of happy ${playerChoice.name}`
+             playerImage.classList.add(`happy${playerChoice.name}`)
+         }
+     
+         // Clear these in case this is not the first round i.e. they've already
+         // got an image in them.
+         computerImageContainer.innerHTML = ""
+         playerImageContainer.innerHTML = ""
+     
+         computerImageContainer.appendChild(computerImage)
+         playerImageContainer.appendChild(computerImage)
+     
+     }
+     
