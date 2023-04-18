@@ -83,3 +83,66 @@ function displayWinner(checkWinner, pPick, compPick) {
     winnerResult.innerHTML = ``;
     }
 }
+
+//new code to add
+
+const CHARACTERS = [
+    {
+        'name': 'rock',
+        'beats': 'scissors',
+    },
+    {
+        'name': 'paper',
+        'beats': 'rock',
+    },
+    {
+        'name': 'scissors'
+        'beats': 'paper',
+    },
+]
+
+const HAPPY_EXPRESSIONS = [
+    'laugh',
+    'smile',
+    'tease',
+    'wink'
+]
+
+const SAD_EXPRESSIONS = [
+    'dazed'
+    'grumpy'
+    'sad'
+    'surprised'
+]
+
+const HAPPY_IMAGES_DIR = 'assets/images/images-win/'
+const SAD_IMAGES_DIR = 'assets/images/images-lose/'
+
+const computerImageContainer = document.getElementById('computer-image-container')
+const playerImageContainer = document.getElementById('player-image-container')
+
+function getRandomItemInArray(array) {
+    let randomIndexInArray = Math.floor(Math.random() * array.length)
+    return array[randomIndexInArray]
+}
+
+function getComputerChoice() {
+    return getRandomItemInArray(CHARACTERS)
+}
+
+function displayWinner(playerChoice, computerChoice) {
+
+    let computerImage = document.createElement('img')
+    let playerImage = document.createElement('img')
+
+    if (playerChoice.beats === computerChoice.name) {
+        // player beats computer -- show happy player, sad computer
+
+        // e.g. assets/images/images-win/rock-win.jpg
+        playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win.jpg`
+        // if you wanted to add the random happy expression:
+        // e.g. assets/images/images-win/rock-win-laugh.jpg
+        // let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
+        // playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win-${happyExpression}.jpg`
+        playerImage.alt = `picture of happy ${playerChoice.name}`
+        playerImage.classList.add(`happy${playerChoice.name}`)
