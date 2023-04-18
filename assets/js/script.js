@@ -1,5 +1,5 @@
-/**List all constants for DOM elements and game options */
-
+/*List all constants for DOM elements and game options */
+/*
 let startImages = document.querySelectorAll(".startimage");
 let compPick;
 //const winnerResult = document.getElementById("winnerResult"); 
@@ -8,7 +8,7 @@ const modal = document.getElementsByClassName(".modal")
 let winImages = document.getElementsByClassName(".winimages");
 let loseImages = document.getElementsByClassName(".loseimages");
 
-/* GameBoard area - play game*/
+/* GameBoard area - play game
 
 function playGame(e) {
     const pPick = e.target.id;
@@ -16,11 +16,11 @@ function playGame(e) {
     const checkWinner = findWinner(pPick, compPick);
     console.log(pPick, compPick, checkWinner);
 }
-
-// Event Listener for each initial click on start images to play game
+*/
+/* Event Listener for each initial click on start images to play game
 startImages.forEach(startimage => startimage.addEventListener('click', playGame));
-
-//Get computer random choice of image for game function
+*/
+/*Get computer random choice of image for game function
 function findCompPick() {
     const randPick = Math.floor(Math.random() * 3) + 1;
     switch (randPick) {
@@ -59,18 +59,18 @@ function findWinner(pPick, compPick) {
         }
     }
 }
-
-// Determine winner image to display
+*/
+/* Determine winner image to display
 function findWinnerImage(pPick, compPick) {
 
 }
-
-// Determine loser image to display
+*/
+/*Determine loser image to display
 function findWinnerImage(pPick, compPick) {
 
 }
-
-// Display Winner of game, Player choice and Computer choice
+*/
+/* Display Winner of game, Player choice and Computer choice
 function displayWinner(checkWinner, pPick, compPick) {
     if(checkWinner === "player" && pPick === "rock") {
 
@@ -83,7 +83,7 @@ function displayWinner(checkWinner, pPick, compPick) {
     winnerResult.innerHTML = ``;
     }
 }
-
+*/
 //new code to add
 
 const CHARACTERS = [
@@ -165,11 +165,13 @@ function displayWinner(playerChoice, computerChoice) {
              computerImage.src = `${HAPPY_IMAGES_DIR}${computerChoice.name}-win-${happyExpression}.jpg`
              computerImage.src = '${HAPPY_IMAGES_DIR}${computerChoice.name}-win.jpg'
              computerImage.alt = 'picture of happy ${computerChoice.name}'
-     
+             computerImage.classList.add(`happy${computerChoice.name}`)
+
              let sadExpression = getRandomItemInArray(SAD_EXPRESSIONS)
              playerImage.src = `${SAD_IMAGES_DIR}${playerChoice.name}-win-${sadExpression}.jpg`
              playerImage.src = '${SAD_IMAGES_DIR}${playerChoice.name}-lose.jpg'
              playerImage.alt = 'picture of sad ${playerChoice.name}'
+             playerImageclassList.add(`sad${playerChoice.name}`)
          }
          else {
              // draw -- both happy
@@ -177,6 +179,7 @@ function displayWinner(playerChoice, computerChoice) {
              computerImage.src = `${HAPPY_IMAGES_DIR}${computerChoice.name}-win-${happyExpression}.jpg`
              computerImage.src = '${HAPPY_IMAGES_DIR}${computerChoice.name}-win.jpg'
              computerImage.alt = 'picture of happy ${computerChoice.name}'
+             computerImage.classList.add(`happy${computerChoice.name}`)
      
              let happyExpression = getRandomItemInArray(HAPPY_EXPRESSIONS)
              playerImage.src = `${HAPPY_IMAGES_DIR}${playerChoice.name}-win-${happyExpression}.jpg`
@@ -191,7 +194,7 @@ function displayWinner(playerChoice, computerChoice) {
          playerImageContainer.innerHTML = ""
      
          computerImageContainer.appendChild(computerImage)
-         playerImageContainer.appendChild(computerImage)
+         playerImageContainer.appendChild(playerImage)
      
      }
      
